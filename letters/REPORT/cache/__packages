@@ -1,0 +1,13 @@
+base
+dplyr
+ggplot2
+knitcitations
+knitr
+pacman
+qdap
+qdapDictionaries
+qdapRegex
+qdapTools
+RColorBrewer
+reports
+xtable
