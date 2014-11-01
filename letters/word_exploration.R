@@ -20,7 +20,7 @@ ggplot(data.frame(nletters = nchar(GradyAugmented)), aes(x=nletters)) +
 	
 position <- lapply(GradyAugmented, function(x){
     z <- unlist(sapply(letters, function(y){
-        gregexpr(y, x)
+        gregexpr(y, x, fixed = TRUE)
     }))
     z <- z[z != -1] 
     setNames(z, gsub("\\d", "", names(z)))
