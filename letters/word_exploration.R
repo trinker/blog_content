@@ -18,8 +18,7 @@ ggplot(data.frame(nletters = nchar(GradyAugmented)), aes(x=nletters)) +
         colour="blue", alpha=.7) + 
     xlab("Number of Letters")
 	
-	position <- lapply(GradyAugmented, function(x){
-
+position <- lapply(GradyAugmented, function(x){
     z <- unlist(sapply(letters, function(y){
         gregexpr(y, x)
     }))
