@@ -29,7 +29,8 @@ parts <- split_vector(txt, split = "References", include = TRUE, regex=TRUE)
 ## View body
 parts[[1]]
 
-
+## View references
+parts[[2]]
 
 ## Extract citations in order of appearance
 rm_citation(unbag(parts[[1]]), extract=TRUE)[[1]]
