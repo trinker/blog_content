@@ -39,7 +39,7 @@ rm_citation(unbag(parts[[1]]), extract=TRUE)[[1]]
 rm_citation(parts[[1]], extract=TRUE)
  
 ## Frequency
-(cites <- list2df(sort(table(rm_citation(unbag(parts[[1]]),
+left_just(cites <- list2df(sort(table(rm_citation(unbag(parts[[1]]),
     extract=TRUE)), TRUE), "freq", "citation")[2:1])
 
 
